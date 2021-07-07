@@ -14,7 +14,7 @@
 # exit on error
 set -e
 
-R_VERSION=$1
+R_VERSION=$4.1.0
 
 # Create temporary directory
 mkdir -p $HOME/R_tmp
@@ -22,7 +22,7 @@ cd $HOME/R_tmp
 
 # Download and extract R source
 echo Downloading R source
-wget https://cran.r-project.org/src/base/R-3/R-${R_VERSION}.tar.gz
+wget https://cran.r-project.org/src/base/R-4/R-${R_VERSION}.tar.gz
 tar xvzf R-${R_VERSION}.tar.gz
 rm R-${R_VERSION}.tar.gz
 
